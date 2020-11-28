@@ -1,0 +1,7 @@
+{
+  "name": "airtnt-react",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
