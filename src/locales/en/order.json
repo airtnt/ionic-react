@@ -1,0 +1,13 @@
+{
+  "title__info": "Your post information",
+  "title__travelFrom": "The place you will travel from",
+  "title__travelTo": "The place you will arrive to",
+  "label__weight": "Available weight",
+  "label__price": "Unit price in dollars ($)",
+  "label__description": "Post description",
+  "label__country": "Country",
+  "label__city": "City",
+  "label__airport": "Airport",
+  "label__date": "Date",
+  "price": "Price"
+}
