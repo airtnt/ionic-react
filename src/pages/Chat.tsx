@@ -7,7 +7,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 
-const Tab1: React.FC = () => {
+const Chat: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -26,4 +26,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Chat;

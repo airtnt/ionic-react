@@ -7,18 +7,18 @@ import {
   IonToolbar,
 } from "@ionic/react";
 
-const Home: React.FC = () => {
+const Posts: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Posts</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
+            <IonTitle size="large">Posts</IonTitle>
           </IonToolbar>
         </IonHeader>
       </IonContent>
@@ -26,4 +26,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Posts;

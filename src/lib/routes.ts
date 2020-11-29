@@ -1,8 +1,10 @@
 import Home from "../pages/Home";
 import Chat from "../pages/Chat";
 import Post from "../pages/Post";
+import UserPosts from "../pages/user/Posts";
+import UserProfile from "../pages/user/Profile";
 
-import { ellipse, square, triangle } from "ionicons/icons";
+import { planet, chatbubble, addCircle, bookmarks, person } from "ionicons/icons";
 
 export default [
   {
@@ -10,20 +12,34 @@ export default [
     name: 'home',
     path: '/home',
     component: Home,
-    icon: ellipse,
+    icon: planet,
   },
   {
     label: 'Chat',
     name: 'chat',
     path: '/chat',
     component: Chat,
-    icon: square,
+    icon: chatbubble,
   },
   {
     label: 'Post',
     name: 'post-create',
     path: '/posts/create',
     component: Post,
-    icon: triangle,
+    icon: addCircle,
+  },
+  {
+    label: 'My Posts',
+    name: 'user-posts',
+    path: '/user/posts',
+    component: UserPosts,
+    icon: bookmarks,
+  },
+  {
+    label: 'Profile',
+    name: 'user-profile',
+    path: '/user/profile',
+    component: UserProfile,
+    icon: person,
   },
 ];

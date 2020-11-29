@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+
 import {
   IonContent,
   IonHeader,
   IonPage,
   IonTitle,
   IonToolbar,
+  IonList,
+  IonItemDivider,
+  IonItem,
+  IonInput,
 } from "@ionic/react";
 
-const Tab1: React.FC = () => {
+const Post: React.FC = () => {
+  const [weight, setWeight] = useState<number>(0);
+
   return (
     <IonPage>
       <IonHeader>
@@ -15,15 +22,21 @@ const Tab1: React.FC = () => {
           <IonTitle>Post</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Post</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent>
+        <IonList>
+          <IonItemDivider>{'weight'}</IonItemDivider>
+          <IonItem>
+            <IonInput
+              type="number"
+              value={weight}
+              placeholder={'weight'}
+              onIonChange={(e) => setWeight(parseInt(e.detail.value!, 10))}
+            />
+          </IonItem>
+        </IonList>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Post;
