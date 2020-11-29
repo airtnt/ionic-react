@@ -7,6 +7,7 @@ export interface InputProps {
   component: JSX.Element;
   control?: Control;
   label?: string;
+  placeholder?: string;
 }
 
 const Input: FC<InputProps> = ({
@@ -14,14 +15,19 @@ const Input: FC<InputProps> = ({
   control,
   component = <IonInput />,
   label,
+  placeholder,
 }) => {
   return (
     <>
       <IonItem>
-        {label && <IonLabel position="floating">{label}</IonLabel>}
+        {label && <IonLabel position="fixed">{label}</IonLabel>}
         <Controller
           render={({ onChange }) => (
-            <component.type {...component.props} onIonChange={onChange} />
+            <component.type
+              {...component.props}
+              placeholder={placeholder}
+              onIonChange={onChange}
+            />
           )}
           name={name}
           control={control}

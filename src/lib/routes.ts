@@ -5,6 +5,7 @@ import UserPosts from "../pages/user/Posts";
 import UserProfile from "../pages/user/Profile";
 
 import { planet, chatbubble, addCircle, bookmarks, person } from "ionicons/icons";
+console.log('planet', planet);
 
 export default [
   {
