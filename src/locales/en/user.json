@@ -1,0 +1,13 @@
+{
+  "profile": "Profile",
+  "title__info": "User Information",
+  "title__password": "Password",
+  "label__name": "Name",
+  "label__email": "Email",
+  "label__phone": "Phone",
+  "placeholder__name": "Your Full Name",
+  "placeholder__email": "Your email",
+  "placeholder__currentPassword": "Current Password",
+  "placeholder__newPassword": "New Password",
+  "placeholder__phone": "Your Phone"
+}
