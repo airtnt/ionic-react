@@ -5,9 +5,19 @@ import UserPosts from "../pages/user/Posts";
 import UserProfile from "../pages/user/Profile";
 
 import { planet, chatbubble, addCircle, bookmarks, person } from "ionicons/icons";
+
 console.log('planet', planet);
 
-export default [
+type Route = {
+  name: string;
+  icon: string,
+  component: React.FC,
+  path?: string,
+  label?: string;
+  size?: string;
+};
+
+const routes: Route[] = [
   {
     label: 'Home',
     name: 'home',
@@ -23,7 +33,7 @@ export default [
     icon: chatbubble,
   },
   {
-    label: 'Post',
+    size: 'large',
     name: 'post-create',
     path: '/posts/create',
     component: Post,
@@ -44,3 +54,5 @@ export default [
     icon: person,
   },
 ];
+
+export default routes;

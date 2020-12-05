@@ -12,7 +12,8 @@ import {
 
 import routes from "../lib/routes";
 
-const AppTabs: React.FC = () => (
+const AppTabs: React.FC = () => {
+  return (
   <IonTabs>
     <IonRouterOutlet>
       {routes.map((route) => (
@@ -22,13 +23,18 @@ const AppTabs: React.FC = () => (
     </IonRouterOutlet>
     <IonTabBar slot="bottom">
       {routes.map((route) => (
-        <IonTabButton tab={route.name} href={route.path} key={route.name} >
-          <IonIcon icon={route.icon} />
+        <IonTabButton
+          href={route.path}
+          tab={route.name}
+          key={route.name}
+        >
+          <IonIcon icon={route.icon} size={route.size} />
           <IonLabel>{route.label}</IonLabel>
         </IonTabButton>
       ))}
     </IonTabBar>
   </IonTabs>
-);
+  );
+};
 
 export default AppTabs;
