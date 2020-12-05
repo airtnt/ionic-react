@@ -17,9 +17,9 @@ const AppTabs: React.FC = () => {
   <IonTabs>
     <IonRouterOutlet>
       {routes.map((route) => (
-        <Route path={route.path} component={route.component} exact={true} key={route.name} />
+        <Route path={route.path} component={route.component} key={route.name} />
       ))}
-      <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
+      <Redirect exact from="/" to="/home" />
     </IonRouterOutlet>
     <IonTabBar slot="bottom">
       {routes.map((route) => (

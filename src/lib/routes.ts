@@ -12,8 +12,8 @@ type Route = {
   name: string;
   icon: string,
   component: React.FC,
+  label: string;
   path?: string,
-  label?: string;
   size?: string;
 };
 
@@ -33,6 +33,7 @@ const routes: Route[] = [
     icon: chatbubble,
   },
   {
+    label: 'Add',
     size: 'large',
     name: 'post-create',
     path: '/posts/create',

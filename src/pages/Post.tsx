@@ -18,6 +18,7 @@ import {
   IonIcon,
   IonItemGroup,
   IonButtons,
+  IonBackButton,
 } from "@ionic/react";
 import {
   informationCircleOutline,
@@ -42,6 +43,9 @@ const Post: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/home" />
+          </IonButtons>
           <IonTitle>New Post</IonTitle>
           <IonButtons slot="primary">
               <IonButton onClick={handleSubmit(onSubmit)}>
@@ -51,7 +55,7 @@ const Post: React.FC = () => {
             </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
         <IonList>
           <IonItemGroup>
             <IonItemDivider sticky={true}>
